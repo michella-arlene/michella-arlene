@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-label="Michella.exe — Player 1, Forward Deployed Engineer">
+  <defs>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#17171C" opacity="0.13"/>
+    </pattern>
+    <clipPath id="xpclip"><rect x="92" y="236" width="382" height="22" rx="11"/></clipPath>
+    <style>
+      .title { font: 900 64px ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif; letter-spacing: -1.5px; }
+      .px { font: 700 13px "Courier New", ui-monospace, monospace; letter-spacing: 2px; }
+      .sub { font: 600 20px ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif; }
+      .float { animation: float 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .float.d1 { animation-delay: -0.8s; } .float.d2 { animation-delay: -1.6s; } .float.d3 { animation-delay: -2.4s; }
+      .blink { animation: blink 1.1s steps(1) infinite; }
+      .xp { animation: xp 4s cubic-bezier(.2,.9,.3,1) infinite; transform-box: fill-box; transform-origin: left; }
+      .bounce { animation: bounce 1.2s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom; }
+      .twinkle { animation: twinkle 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .twinkle.d1 { animation-delay: -0.7s; } .twinkle.d2 { animation-delay: -1.3s; }
+      @keyframes float { 0%,100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(-8px) rotate(var(--r, 0deg)); } }
+      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes xp { 0% { transform: scaleX(0.05); } 70%,100% { transform: scaleX(1); } }
+      @keyframes bounce { 0%,100% { transform: translateY(0) scale(1,1); } 40% { transform: translateY(-14px) scale(.96,1.04); } 80% { transform: translateY(0) scale(1.05,.95); } }
+      @keyframes twinkle { 0%,100% { transform: scale(.6); opacity: .4; } 50% { transform: scale(1.1); opacity: 1; } }
+    </style>
+  </defs>
+
+  <!-- card -->
+  <rect x="14" y="14" width="972" height="302" rx="28" fill="#17171C"/>
+  <rect x="6" y="6" width="972" height="302" rx="28" fill="#FFF4E0" stroke="#17171C" stroke-width="4"/>
+  <rect x="6" y="6" width="972" height="302" rx="28" fill="url(#dots)"/>
+
+  <!-- top tag -->
+  <g>
+    <rect x="58" y="40" width="318" height="32" rx="9" fill="#17171C"/>
+    <text x="74" y="61" class="px" fill="#FFC21A">PLAYER 1 HAS ENTERED THE GAME</text>
+  </g>
+
+  <!-- title -->
+  <text x="56" y="140" class="title" fill="#17171C">Michella<tspan fill="#FF4D2E">.exe</tspan></text>
+  <text x="58" y="180" class="sub" fill="#17171C">Class: Forward Deployed Engineer · Guild: WidaTech</text>
+  <text x="58" y="208" class="sub" fill="#17171C" opacity=".7">Academy: Computer Science @ BINUS</text>
+
+  <!-- XP bar -->
+  <text x="58" y="252" class="px" fill="#17171C">XP</text>
+  <rect x="92" y="236" width="382" height="22" rx="11" fill="#fff" stroke="#17171C" stroke-width="3"/>
+  <g clip-path="url(#xpclip)">
+    <rect class="xp" x="92" y="236" width="382" height="22" fill="#1FBF75"/>
+  </g>
+  <rect x="92" y="236" width="382" height="22" rx="11" fill="none" stroke="#17171C" stroke-width="3"/>
+
+  <!-- hearts -->
+  <g transform="translate(494 236)">
+    <g fill="#FF4D2E">
+      <path d="M4 0h6v2h2V0h6v2h2v8h-2v2h-2v2h-2v2h-2v2h-2v-2H8v-2H6v-2H4v-2H2V2h2z" transform="scale(1.1)"/>
+      <path d="M4 0h6v2h2V0h6v2h2v8h-2v2h-2v2h-2v2h-2v2h-2v-2H8v-2H6v-2H4v-2H2V2h2z" transform="translate(28 0) scale(1.1)"/>
+      <path d="M4 0h6v2h2V0h6v2h2v8h-2v2h-2v2h-2v2h-2v2h-2v-2H8v-2H6v-2H4v-2H2V2h2z" transform="translate(56 0) scale(1.1)"/>
+    </g>
+  </g>
+
+  <!-- press start -->
+  <g class="blink">
+    <text x="58" y="290" class="px" fill="#FF4D2E" style="font-size:15px">▶ PRESS START</text>
+  </g>
+
+  <!-- stickers -->
+  <g class="float" style="--r: 7deg">
+    <rect x="808" y="40" width="134" height="44" rx="12" fill="#17171C"/>
+    <rect x="802" y="34" width="134" height="44" rx="12" fill="#1FBF75" stroke="#17171C" stroke-width="3"/>
+    <text x="869" y="62" class="px" fill="#17171C" text-anchor="middle" style="font-size:15px">LVL UP!</text>
+  </g>
+  <g class="float d1" style="--r: -6deg">
+    <rect x="626" y="104" width="196" height="44" rx="12" fill="#17171C"/>
+    <rect x="620" y="98" width="196" height="44" rx="12" fill="#FFC21A" stroke="#17171C" stroke-width="3"/>
+    <text x="718" y="126" class="px" fill="#17171C" text-anchor="middle" style="font-size:14px">★ APICTA 2025</text>
+  </g>
+  <g class="float d2" style="--r: 4deg">
+    <rect x="818" y="150" width="140" height="44" rx="12" fill="#17171C"/>
+    <rect x="812" y="144" width="140" height="44" rx="12" fill="#fff" stroke="#17171C" stroke-width="3"/>
+    <text x="882" y="172" class="px" fill="#17171C" text-anchor="middle" style="font-size:14px">&lt;/&gt; ship()</text>
+  </g>
+  <g class="float d3" style="--r: -3deg">
+    <rect x="676" y="222" width="140" height="44" rx="12" fill="#17171C"/>
+    <rect x="670" y="216" width="140" height="44" rx="12" fill="#2F5BFF" stroke="#17171C" stroke-width="3"/>
+    <text x="740" y="244" class="px" fill="#fff" text-anchor="middle" style="font-size:14px">+500 XP</text>
+  </g>
+
+  <!-- pixel heart buddy -->
+  <g class="bounce">
+    <g transform="translate(860 222) scale(3)" fill="#FF4D2E" stroke="#17171C" stroke-width="0.8">
+      <path d="M4 0h6v2h2V0h6v2h2v8h-2v2h-2v2h-2v2h-2v2h-2v-2H8v-2H6v-2H4v-2H2V2h2z"/>
+    </g>
+    <g fill="#17171C">
+      <rect x="882" y="240" width="5" height="7"/>
+      <rect x="897" y="240" width="5" height="7"/>
+      <rect x="886" y="252" width="12" height="3"/>
+    </g>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#FFC21A" stroke="#17171C" stroke-width="2">
+    <path class="twinkle" d="M590 52 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z"/>
+    <path class="twinkle d1" d="M960 108 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4z"/>
+    <path class="twinkle d2" d="M604 262 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4z"/>
+  </g>
+</svg>
